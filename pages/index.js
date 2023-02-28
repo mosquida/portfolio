@@ -3,10 +3,20 @@ import React from "react";
 export default function Home() {
   return (
     <div className="px-10 md:px-20 xl:px-40 2xl:px-60 py-20 md:py-40 xl:py-48">
-      <h1 className="text-2xl md:text-4xl font-medium">
+      <h1
+        className="text-2xl md:text-4xl font-medium"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1500"
+      >
         Carl Justine Mosquida
       </h1>
-      <h2 className="text-xl md:text-2xl text-gray-400 md:pt-2">
+      <h2
+        className="text-xl md:text-2xl text-gray-400 md:pt-2"
+        data-aos="fade-up"
+        data-aos-delay="1000"
+        data-aos-duration="1500"
+      >
         Software Engineer
       </h2>
 
