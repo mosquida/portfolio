@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="px-10 md:px-20 xl:px-40 2xl:px-60 py-20 md:py-40 xl:py-48">
+    <div className="px-10 md:px-20 xl:px-40 2xl:px-60 py-20 md:py-40 xl:py-48 overflow-hidden">
       <h1
         className="text-2xl md:text-4xl font-medium"
         data-aos="fade-up"
@@ -20,14 +20,19 @@ export default function Home() {
         Software Engineer
       </h2>
 
-      <div className="pt-60 md:grid grid-cols-4">
-        <div className=" col-span-1">
+      {/* About */}
+      {/* <div className="pt-60 md:grid grid-cols-4">
+        <div className=" col-span-1" data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="1500">
           <p>about</p>
         </div>
-        <div className=" col-span-1">
+        <div className=" col-span-1" data-aos="fade-left"
+          data-aos-delay="1000"
+          data-aos-duration="1500">
           <p>about</p>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 text-sm">
           <p className="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eaque
             ab aperiam, aliquam ut facere magnam animi autem quis iusto
@@ -42,16 +47,27 @@ export default function Home() {
             eveniet? Blanditiis?
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="pt-60 md:grid grid-cols-4">
-        <div className=" col-span-1">
+      {/* Projects */}
+      <div className="pt-40 md:grid grid-cols-4">
+        <div
+          className=" col-span-1"
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="1500"
+        >
           <p className="font-bold pt-6">Projects</p>
         </div>
         <div className=" col-span-3">
           <div className="grid grid-cols-3 gap-10">
             {/* 1st Project */}
-            <div className=" col-span-1">
+            <div
+              className=" col-span-1"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1500"
+            >
               <small className="pl-8 text-gray-400">Publishing Platform</small>
 
               <p className="font-semibold flex gap-2">
@@ -76,7 +92,12 @@ export default function Home() {
               </p>
             </div>
             <div className="col-span-2">
-              <p className="pt-6">
+              <p
+                className="pt-6 text-sm"
+                data-aos="fade-left"
+                data-aos-delay="1200"
+                data-aos-duration="1500"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
                 eaque ab aperiam, aliquam ut facere magnam animi autem quis
                 iusto aspernatur illo impedit culpa sapiente, mollitia expedita
@@ -85,7 +106,12 @@ export default function Home() {
             </div>
 
             {/* 2nd Project */}
-            <div className=" col-span-1 pt-10">
+            <div
+              className=" col-span-1 pt-10"
+              data-aos="fade-left"
+              data-aos-delay="1400"
+              data-aos-duration="1500"
+            >
               <small className="pl-8 text-gray-400">Ecommerce Shop</small>
               <p className="font-semibold flex gap-2">
                 <i>
@@ -107,8 +133,13 @@ export default function Home() {
                 OneShop
               </p>
             </div>
-            <div className="col-span-2">
-              <p className="pt-6">
+            <div className="col-span-2 text-sm">
+              <p
+                className="pt-11"
+                data-aos="fade-left"
+                data-aos-delay="1600"
+                data-aos-duration="1500"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
                 eaque ab aperiam, aliquam ut facere magnam animi autem quis
                 iusto aspernatur illo impedit culpa sapiente, mollitia expedita
@@ -116,6 +147,97 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Contact  */}
+      <div className="pt-60 md:grid grid-cols-4">
+        <div
+          className=" col-span-1"
+          data-aos="fade-left"
+          // data-aos-delay="500"
+          data-aos-duration="1500"
+        >
+          <p className="font-bold">Connect</p>
+        </div>
+        <div className="text-sm col-span-3">
+          <a
+            href="mailto:mosquidacarljustine@gmail.com"
+            className="flex gap-2 transform"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            data-aos-duration="1500"
+          >
+            mosquidacarljustine@gmail.com
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-4 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/carl-justine-mosquida"
+            className="flex gap-2 pt-8"
+            data-aos="fade-left"
+            data-aos-delay="1200"
+            data-aos-duration="1500"
+          >
+            linkedin.com/in/carl-justine-mosquida
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-4 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </i>
+          </a>
+
+          <a
+            href="https://github.com/mosquida"
+            className="flex gap-2 pt-8"
+            data-aos="fade-left"
+            data-aos-delay="1400"
+            data-aos-duration="1500"
+          >
+            github.com/mosquida
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-4 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </i>
+          </a>
         </div>
       </div>
     </div>
